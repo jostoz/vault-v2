@@ -1,0 +1,430 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "loanToken",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "collateralToken",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "oracle",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "irm",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "lltv",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct IMorpho.MarketParams",
+						"name": "marketParams",
+						"type": "tuple"
+					}
+				],
+				"name": "accrueInterest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "loanToken",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "collateralToken",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "oracle",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "irm",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "lltv",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct IMorpho.MarketParams",
+						"name": "marketParams",
+						"type": "tuple"
+					},
+					{
+						"internalType": "uint256",
+						"name": "assets",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "shares",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "onBehalf",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "receiver",
+						"type": "address"
+					}
+				],
+				"name": "borrow",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "assetsBorrowed",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sharesBorrowed",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "id",
+						"type": "bytes32"
+					}
+				],
+				"name": "market",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint128",
+								"name": "totalSupplyAssets",
+								"type": "uint128"
+							},
+							{
+								"internalType": "uint128",
+								"name": "totalSupplyShares",
+								"type": "uint128"
+							},
+							{
+								"internalType": "uint128",
+								"name": "totalBorrowAssets",
+								"type": "uint128"
+							},
+							{
+								"internalType": "uint128",
+								"name": "totalBorrowShares",
+								"type": "uint128"
+							},
+							{
+								"internalType": "uint128",
+								"name": "lastUpdate",
+								"type": "uint128"
+							},
+							{
+								"internalType": "uint128",
+								"name": "fee",
+								"type": "uint128"
+							}
+						],
+						"internalType": "struct IMorpho.Market",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "id",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "position",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "supplyShares",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint128",
+								"name": "borrowShares",
+								"type": "uint128"
+							},
+							{
+								"internalType": "uint128",
+								"name": "collateral",
+								"type": "uint128"
+							}
+						],
+						"internalType": "struct IMorpho.Position",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "loanToken",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "collateralToken",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "oracle",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "irm",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "lltv",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct IMorpho.MarketParams",
+						"name": "marketParams",
+						"type": "tuple"
+					},
+					{
+						"internalType": "uint256",
+						"name": "assets",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "shares",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "onBehalf",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "repay",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "assetsRepaid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sharesRepaid",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "loanToken",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "collateralToken",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "oracle",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "irm",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "lltv",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct IMorpho.MarketParams",
+						"name": "marketParams",
+						"type": "tuple"
+					},
+					{
+						"internalType": "uint256",
+						"name": "assets",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "onBehalf",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "supplyCollateral",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "loanToken",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "collateralToken",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "oracle",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "irm",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "lltv",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct IMorpho.MarketParams",
+						"name": "marketParams",
+						"type": "tuple"
+					},
+					{
+						"internalType": "uint256",
+						"name": "assets",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "onBehalf",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "receiver",
+						"type": "address"
+					}
+				],
+				"name": "withdrawCollateral",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/adapters/BastionLeverageAdapterV2.sol": "IMorpho"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/adapters/BastionLeverageAdapterV2.sol": {
+			"keccak256": "0xb69ef5301fff79d26a0698efa98fdf9801d004c8e79ae260568e4e91b6b9a428",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://78f0ca4b7cdbb117c2cab11d4967c9986a82330ae6747965376e8629b80bbbca",
+				"dweb:/ipfs/Qmax4a1wzqXhGBp1KGYyvmtFGfgDrq7nZyTLKFCAkpJh5K"
+			]
+		}
+	},
+	"version": 1
+}

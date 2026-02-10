@@ -1,0 +1,47 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"title": "BastionLeverageAdapter V3.1 (Fixes)",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Adaptador de Estrategia para MetaMorpho V2 en Base.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/adapters/BastionLeverageAdapterV2.sol": "Math"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/adapters/BastionLeverageAdapterV2.sol": {
+			"keccak256": "0xb69ef5301fff79d26a0698efa98fdf9801d004c8e79ae260568e4e91b6b9a428",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://78f0ca4b7cdbb117c2cab11d4967c9986a82330ae6747965376e8629b80bbbca",
+				"dweb:/ipfs/Qmax4a1wzqXhGBp1KGYyvmtFGfgDrq7nZyTLKFCAkpJh5K"
+			]
+		}
+	},
+	"version": 1
+}
